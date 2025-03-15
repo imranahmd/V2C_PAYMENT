@@ -1,0 +1,48 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+/*body {
+    background:#fafafa;
+    font-family: 'Roboto', sans-serif;
+    padding-top:50px;
+}*/
+
+.cont {
+   padding-bottom:30px;margin-top: 20px;
+}
+.controw {
+   background-image: url("1.png");
+   padding-bottom:30px;margin-top: 20px;
+}
+
+
+.datpayment-form {
+   /* width:500px;*/
+}
+pre {
+    width:500px;
+    margin:auto;
+}
+
+
+.jp-card {
+    font-family: "Helvetica Neue";
+    line-height: 1;
+    position: relative;
+    width: 100%;
+    height: 80%!important;
+    min-width: -webkit-fill-available!important;
+    }
+
+    .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0px 15px!important;
+}
+
+.jp-card-lower .jp-card-number {
+    font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+    font-size: 21px!important;
+    }

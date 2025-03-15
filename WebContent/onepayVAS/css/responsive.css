@@ -1,0 +1,170 @@
+/*For Date and Year Dropdown Adjustment*/
+@media (min-width: 1024px){
+	.custom-date { width: 28%; float: left; margin-right:1%; margin-top: 5px;}
+	.custom-year { width: 32%; float: left; margin-right:2%; margin-top: 5px;}
+}
+
+/*all small devices*/
+@media (max-width: 1200px){
+    .wrapper{width: 96%;}
+}
+/*Mobile Large*/
+@media (min-width: 424px) and (max-width: 768px){
+	#shipping_details .half{width:38%}
+	#shipping_details .halfR{width:38%} 
+    
+}
+/*ipad - both*/
+@media (min-width: 768px) and (max-width: 1024px){
+	    .stage_bankpg{width: 390px!important;}
+ 	#bank-select{width: 373px!important;}
+ 	 #wallet-bank-select1{width: 373px!important;}
+ 
+  .stage_bankpg1{width: 390px!important;}
+ 	 	 #wallet-bank-select2{width: 373px!important;}
+ 
+  .stage_bankpg2{width: 390px!important;}
+ 	
+	#shipping_details .half{width:38%}
+	#shipping_details .halfR{width:38%} 
+	.custom-date { width: 28%; float: left; margin-right:1%; margin-top: 5px;}
+	.custom-year { width: 32%; float: left; margin-right:2%; margin-top: 5px;}
+    
+}	
+/*ipad - landscape*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    
+}
+/*ipad - portrait*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+   h4 { font-size: 16px;}
+    #shipping_details input{width: 90%;}
+    .payment_mode{font-size: 14px;}
+    .stage_bankpg{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 375px;margin-left: -63px;}
+ 	#bank-select{ width:360px; margin-left: 1px;}
+ 	#wallet-bank-select{ width:360px; margin-left: 1px;}
+ 	
+ 	.stage_bankpg1{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 375px;margin-left: -63px;}
+ 	#wallet-bank-select1{ width:360px; margin-left: 1px;}
+ 		
+
+ 	
+}
+/*all mobiles & small tabs*/
+@media (max-width: 767px){
+#shipping_details input{float:none; width:88%}
+#shipping_details .half{float:none; width:88%}
+#shipping_details .halfR{float:none; width:88%}
+.billing-info, .shipping_details{padding: 20px;}
+.mainHead{font-size: 20px; padding: 20px 0;}
+.left{width: 100%; float: none; min-height: 0;}
+.right{width: 100%; float: none; min-height: 0;}
+.hideInMobile{display: none;}
+.heading{padding: 0;}
+.heading img.icon{display: none;}
+.pay_options, .billingInfo, .otherInfo{padding: 20px;}
+.pay_options{margin-bottom: 10px}
+.billingInfo .heading{width:49.2%; display: inline-block;}
+h5 { font-size: 22px;}
+.heading.rightside{text-align: right;}
+.heading p{font-size: 13px;}
+.otherInfo .heading h6,.otherInfo .heading p{ display: inline;}
+.otherInfo .heading > p::after{content: ":";  }
+.proceed_payment .spacer90{height: 20px;}
+.drop_options{position: relative;margin-bottom: 10px;}
+.payment_mode li.payzapp, .payment_mode li{font-size: 13px;padding: 10px;}
+/* .payment_mode li img{width: 40px;} */
+.payment_mode li img{width: 40px;
+    height: 40px;
+    margin-top: -10px;}
+.stage li{padding: 15px 10px 5px;}
+body{font-size: 13px;}
+.card-content input{ padding: 20px 20%; width: 60%;font-size: 13px;}
+.col3 .exp-date.column{width: 100%; margin: 0 0 10px 0; float: none;}
+.col3 .cvv.column{width: 50%; margin-bottom: 10px;}
+.card-content .cvv input{padding: 20px 0% 20px 40%;}
+.btn .red-btn{font-size: 13px;border-width: 0 0 4px; width: 44%}
+h2{font-size: 55px;}
+.tooltip{width: 120px; top: -18px;}
+.btn-sml .red-btn{ padding: 18px 20px;margin: 0 auto;}
+footer .img-norton { float: none; margin: 10px 0; }
+.heading{margin-bottom: 10px;}
+}
+/*small tabs*/
+@media (min-width: 600px) and (max-width: 767px){
+.btn .red-btn{font-size: 14px;border-width: 0 0 4px; width: 46%}   
+.custom-date { width: 45%; float: left; margin-right:1%; margin-top: 5px;}
+.custom-year { width: 45%; float: left; margin-right:2%; margin-top: 5px;}
+}
+/*mobile*/
+@media (max-width: 580px){
+	.billing-info dt{width:100%; float:none; margin-bottom: 10px;}
+	.total_amount{float:none; width:100%;}
+.confirm_button{float:none; width:100%}
+.col2 .column2{width:90%; float:none; }
+.capacha-img{text-align:left; float:none}
+    .heading{margin-bottom: 10px;}
+    .heading.rightside{text-align: left;}
+    .billingInfo .heading{display: block; width: 100%;}
+	
+	.stored-card span{ font-size:13px;}
+	.stored-card .remove-card{font-size:11px;}
+	.cc-emi .emi-table th{ padding:15px 2px; }
+.cc-emi .emi-table td{padding:8px 2px}
+.cc-emi .emi-table{  border:none}
+	.stored-card img{ margin-right:10px;}
+	
+.stored-card div > p > input[type="checkbox"]:not(:checked) + label:before, .stored-card div > p > input[type="checkbox"]:checked + label:before {left:1px;}
+.stored-card div > p > input[type="checkbox"]:not(:checked) + label:after,.stored-card div > p > input[type="checkbox"]:checked + label:after {
+ left: 1px;}
+ .stored-card div > p > input[type="checkbox"]:not(:checked) + label,.stored-card div > p > input[type="checkbox"]:checked + label {padding-left: 45px;}
+ .stored-card img{ margin-left:-46px;}
+.custom-date { width: 45%; float: left; margin-right:1%; margin-top: 5px;}
+.custom-year { width: 45%; float: left; margin-right:2%; margin-top: 5px;}
+	
+}
+
+@media (min-width: 375px) and (max-width: 580px){
+ .stage_bankpg{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 327px!important;margin-left: -63px;}
+ #bank-select{ width:295px; margin-left: 1px;}
+ #wallet-bank-select{width:295px; margin-left: 1px;}
+ .payment_mode_bank{font-size: 15px;width: 312px!important;}
+  #wallet-bank-select1{width: 312px!important;}
+ 
+  .stage_bankpg1{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 327px!important;margin-left: -63px;}
+ #wallet-bank-select2{width: 312px!important;}
+ 
+  .stage_bankpg2{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 327px!important;margin-left: -63px;}
+
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+ .stage_bankpg{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 260px!important;margin-left: -63px;}
+ #bank-select{ width:246px!important; margin-left: 1px;}
+ #wallet-bank-select{width:285px; margin-left: 1px;}
+ .payment_mode_bank { font-size: 13px;}
+ 
+  .stage_bankpg1{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 260px!important;margin-left: -63px;}
+ 
+ #wallet-bank-select1{width:246px!important;}
+   .stage_bankpg2{background:#f2f3f4 url(../images/select-bg.png) no-repeat 95% center; border: 2px solid #004a8f; border-radius: 5px; cursor: pointer;margin-bottom: 20px;width: 260px!important;margin-left: -63px;}
+ 
+ #wallet-bank-select2{width:246px!important;}
+ 
+}
+
+  /*For Iphone only, seraching for best solution temporary fix*/  
+  @media (min-width: 361px) and (max-width: 371px)  {
+  .icon-delete{
+    display:none;
+    position:relative;
+    background-image: url(../images/icon-delete.png);
+    background-position: center center;
+    background-repeat:no-repeat; 
+    background-size: 80px 80px;
+    padding: 10px 0px;
+    margin:0 auto;
+    margin-left: -50px
+}
+  	
+  }

@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+          background: linear-gradient(to bottom, #f7f7f7db,#f7f7f7db);
+
+
+}
+.main_wrapper{
+  height: 600px;width: 696px;
+}
+.phone_wrapper {
+    width: auto;
+}
+@media only screen and (max-width: 767px){
+.phone_wrapper {
+ width: 100%!important;
+}
+.phone_wrapper main{
+  flex: unset !important;
+width: 100% !important;
+}
+.phone_wrapper main .tab_reel{
+  width: 100% !important;
+display: block !important;
+}
+.main_wrapper{
+  width: 100% !important;
+}
+}
+
+
+.phone_wrapper {
+  width: 724px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.phone_wrapper header {
+  background: #bfd3f8;
+  width: 100%;
+ height: 210px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.phone_wrapper header .speaker {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_wrapper header .mic {
+  width: 26%;
+  height:auto;
+}
+.phone_wrapper header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.phone_wrapper header nav .tab {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_wrapper header nav .indicator {
+  width: 15%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  background: #84abf1;
+  transition: 0.3s ease;
+}
+.phone_wrapper header .block {
+  width: 85%;
+  height: 85%;
+  text-align: center;
+  border-radius: 4px;
+  background:#ffffff;
+  cursor: pointer;
+}
+.phone_wrapper main {
+  flex: 1;
+  width: 200%;
+  height: 100%;
+}
+.phone_wrapper main .tab_reel {
+      width: 50%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s cubic-bezier(0.18, 1.14, 0.5, 1.18);
+}
+.phone_wrapper main .tab_reel .tab_panel1, .phone_wrapper main .tab_reel .tab_panel2 {
+  width: 50%;
+  padding: 10px;
+}
+.phone_wrapper main .card {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 0.7rem;
+  border-radius: 6px;
+  background: white;
+  box-shadow:0px 5px 15px rgb(49, 101, 194);
+}
+.phone_wrapper main .card_large figure {
+  width: 100%;
+        /* height: 369px;*/
+  margin: 0;
+}
+.phone_wrapper main .card_large .desc {
+  padding-left: 0px;
+}
+.phone_wrapper main .card_list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.phone_wrapper main .card_list figure {
+  width: 40px;
+  height: 40px;
+  border-radius: 120px;
+  background: #bfd3f8;
+  margin: 0;
+}
+.phone_wrapper main .card_list .desc {
+  flex: 1;
+}
+.phone_wrapper main .desc {
+  width: 100%;
+  padding: 10px;
+}
+.phone_wrapper main .desc .block {
+  width: 40%;
+  height: 7px;
+  margin-bottom: 5px;
+  background: #92b4f2;
+}
+.phone_wrapper main .desc .block:nth-child(2) {
+  width: 35%;
+  margin-bottom: 0px;
+}
+
+
+
+
+.tab1.active ~ .indicator {
+  left: 0;
+}
+
+.tab2.active ~ .indicator {
+  left:17.5%;
+}
+.tab3.active ~ .indicator {
+  left: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+   h2{
+    font-size:7px!important;
+    } 
+
+ .logoimg{
+
+    width: 80px;
+    margin-left: 37px;
+margin-bottom: 4px;
+    }
+  }
+
+  .phone_wrapper main .tab_reel .tab_panel1, .phone_wrapper main .tab_reel .tab_panel2 {
+    width: 100%;
+    padding:5px!important;
+}
+.logoimg{
+
+    width: 45px;
+    margin-left: 37px;
+margin-bottom: 4px;
+    }
+
+
+    .tab:hover {
+      border: 3px solid #94dbd8;
+          background: #ffffffad;
+                  box-shadow: 0px 0px 3px 2px;
+    border-radius: 7px;
+    }
+    .active {
+       border: 3px solid #498ee4;
+           background: #ffffffad;
+                  box-shadow: 0px 0px 3px 2px;
+    border-radius: 7px;
+}
+
+/*.jp-card-container {
+ 
+ height: 190px!important;
+  }*/
+
+
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: white;
+        font-size: 14px;
+    font-family: -webkit-body;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #3d91ca;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+ 
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+ 
+}
+
+.tabcontent1{
+  display: none;
+}
+
+
+ .ccet {
+       background: #498ee4!important;
+    color: white!important;
+    margin-left: 174px!important;
+    padding: 4px!important;
+    height: 24px;
+    font-size:11px;
+  }
+
+
+@media (max-width: 800px) {
+ 
+  .ccet {
+       background: #498ee4!important;
+    color: white!important;
+    margin-left: 174px!important;
+        padding: 4px!important;
+    height: 24px;
+    font-size:11px;
+  }
+
+ 
+}
+
+@media (max-width: 400px) {
+ 
+  .ccet {
+       background: #498ee4!important;
+    color: white!important;
+    margin-left: 173px!important;
+        padding: 4px!important;
+    height: 24px;
+    font-size:11px;
+  }
+
+ 
+}
+
+@media (min-width:900px) {
+ 
+  .ccet {
+       background: #498ee4!important;
+    color: white!important;
+    margin-left: 253px!important;
+        padding: 4px!important;
+    height: 24px;
+    font-size:11px;
+  }
+
+ 
+}
+
+@media (max-width:400px) {
+ 
+  .phone_wrapper {
+      padding-top:0px;
+  }
+.mic{
+    margin-top: 100px;
+    margin-right: 78px;
+}
+.phone_wrapper header .block{
+height:100%;
+}
+.phone_wrapper header nav{
+height: 39%;
+
+    margin-bottom: 37px;
+}
+ 
+}
+

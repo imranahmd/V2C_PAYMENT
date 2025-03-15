@@ -1,0 +1,37 @@
+<?xml version="1.0" ?> 
+<project name="NETCMW" default="war">
+
+	<path id="classpath">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="init">
+		<mkdir dir="build1/classes"/>
+		<mkdir dir="dist" />
+	</target>
+	
+	<target name="compile" depends="init" >
+		<javac destdir="build1/classes" debug="true" srcdir="src">
+			<classpath refid="classpath"/>
+		</javac>
+		<copy file="src/log4j2.xml" tofile="build1/classes/log4j2.xml" overwrite="true" />
+	</target>
+	
+	
+	<target name="war" depends="compile">
+		<war destfile="dist/payment.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent"/>
+			<lib dir="WebContent/WEB-INF/lib"/>
+			<classes dir="build1/classes"/>
+			
+		</war>
+	</target>
+	
+	<target name="clean">
+		<delete dir="dist" />
+		<delete dir="build1" />
+	</target>
+	
+</project>

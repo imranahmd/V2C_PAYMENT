@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+	<Properties>
+		<Property name="basePath">/home/AppLogs/PG</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="fileLogger"
+			fileName="${basePath}/paymentTxnInfo.log"
+			filePattern="${basePath}/paymentTxnInfo_%d{ddMMyyyy}_%i.log.gz">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] (%F:%L)%M -%msg%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="1GB" />
+			</Policies>
+			            <DefaultRolloverStrategy max="24" />
+		</RollingFile>
+		<RollingFile name="errorFile"
+			fileName="${basePath}/paymentTxnError.log"
+			filePattern="${basePath}/paymentTxnError_%d{ddMMyyyy}_%i.log.gz">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] (%F:%L)%M -%msg%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="1GB" />
+			</Policies>
+			            <DefaultRolloverStrategy max="24" />
+		</RollingFile>
+
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] (%F:%L)%M - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.payfi.upi.hdfc.UpiCheckServlet" level="debug" additivity="false">
+			<AppenderRef ref="fileLogger" level="debug" />
+			<AppenderRef ref="errorFile" level="error" />
+		</Logger>
+		<Root level="info" additivity="false">
+			<AppenderRef ref="fileLogger" level="info" />
+			<AppenderRef ref="errorFile" level="error" />
+			<AppenderRef ref="console" />
+		</Root>
+	</Loggers>
+</Configuration>

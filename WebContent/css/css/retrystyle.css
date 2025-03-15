@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner-wrap{
+    background: #fff;
+    box-shadow: 7px 7px 10px 0px #d1d1d1;
+}
+
+.header{
+    padding: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.action-outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.action-box{
+    background: #fafafa;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    width: 550px;
+    height: 248px;
+    padding: 20px;
+    box-shadow: 0px 1px 2px 0px #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-message{
+    font-size: 20px;
+    font-weight: 400;
+    color: #e53b3b;
+    text-align: center;
+    line-height: 30px;
+}
+
+.error-icon{
+    background: url(../images/error-icon.png) no-repeat left top;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+.buttns-wrap{
+    display: flex;
+    flex-direction: row;
+    padding-top: 58px;
+}
+
+.btn{
+    height: 44px;
+    width: 190px;
+    font-size: 18px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px #d1d1d1;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+
+.btn-cancel{
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    color: #919191;
+    margin-right: 18px;
+    
+}
+
+.btn-cancel:hover{
+    background: #f0f0f0;
+}
+
+.btn-retry{
+    background: #4496d2;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.btn-retry:hover{
+    background: #2d84c4;
+}
+
+
+.footer{
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer div:last-of-type{
+    margin-left: auto;
+}
+
+.ssl-secure-logo{
+    margin-left: 70px;
+}
+
+
+
+@media (min-width:320px) and (max-width: 480px) { 
+    .container{
+         width: 100%;
+    }
+
+    .action-outer{
+        height: 76vh;
+    }
+
+    .action-box{
+        width: 100%;
+        background: #fff;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .buttns-wrap{
+        flex-direction: column;
+    }
+
+    .btn-cancel{
+        margin-bottom: 30px;
+    }
+
+    .footer{
+        justify-content: space-between;
+    }
+
+    .footer img{
+        width: 75%;
+    }
+
+    .ssl-secure-logo{
+        margin-left: auto;
+    }
+}
